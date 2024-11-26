@@ -31,23 +31,23 @@ console.log(bound());
 
 //Factory function
 
-// function createRect(a, b) {
-//   return {
-//     height: a,
-//     width: b,
-//     area() {
-//       console.log("The area of the rectangle is: ", this.height * this.width);
-//     },
-//     area() {
-//       console.log(
-//         "The area of the perimeter is: ",
-//         2 * (this.height + this.width)
-//       );
-//     },
-//   };
-// }
+function createRect(a, b) {
+  return {
+    height: a,
+    width: b,
+    area() {
+      console.log("The area of the rectangle is: ", this.height * this.width);
+    },
+    parameter() {
+      console.log(
+        "The area of the perimeter is: ",
+        2 * (this.height + this.width)
+      );
+    },
+  };
+}
 
 // const rect1 = createRect(2, 2);
 // const rect2 = createRect(2, 4);
-// rect1.area();
-// rect2.area();
+rect1.area();
+rect2.area();
